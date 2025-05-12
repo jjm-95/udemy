@@ -1,0 +1,22 @@
+body {
+  margin: 50px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(83, 75, 75);
+}
+p {
+  color: #534b4b;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#today {
+  color: rgb(170, 96, 103);
+  font-weight: bold;
+  font-size: 52px;
+}
