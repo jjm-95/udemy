@@ -1,34 +1,35 @@
 body {
-    text-align: center;
-    background-color: rgb(233, 215, 207);
-    margin: 50px;
-  }
-  
-  h1 {
-    font-family: "Oswald", sans-serif;
-    color: #534b4b;
-  }
-  
-  p {
-    color: #534b4b;
-    font-family: "fira sans", sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: rgb(167, 1, 78);
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  #goal-title {
-      font-weight: bold;
-      margin: 10px;
-      font-size: 30px;
-  }
-  
-  #back-link {
-      margin: 50px;
-  }
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+  margin: 50px;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #534b4b;
+}
+
+p {
+  color: #534b4b;
+  font-family: "fira sans", sans-serif;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(167, 1, 78);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#goal-title {
+  font-weight: bold;
+  margin: 10px;
+  font-size: 30px;
+}
+
+#back-link {
+  margin: 50px;
+}

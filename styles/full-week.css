@@ -1,20 +1,20 @@
 h1 {
   font-size: 48px;
   color: rgb(71, 62, 62);
-  margin: 12px 0;
+  margin: 0;
 }
 
-/* #description {
-  margin-bottom: 36px;
-} */
+#description {
+  margin: 12px 0;
+}
 
 header {
   margin-bottom: 64px;
 }
 
-header p {
+/* header p {
   margin-bottom: 36px;
-}
+} */
 
 a {
   padding: 12px 48px;
@@ -23,6 +23,8 @@ a {
   border: 1px solid rgb(167, 1, 78);
   border-radius: 4px;
   font-size: 24px;
+  margin: 0;
+  display: inline-block;
 }
 
 a:hover {
@@ -40,6 +42,7 @@ ol {
 li {
   padding: 16px;
   margin: 32px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   background-color: rgb(223, 136, 124);
   border-color: 6px;
   border-radius: 8px;
