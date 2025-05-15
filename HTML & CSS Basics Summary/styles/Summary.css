@@ -34,6 +34,10 @@ main p {
   font-size: 15px;
 }
 
+span {
+  font-weight: bold;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -56,23 +60,42 @@ li {
 
 a {
   background-color: #fef0a8;
-  border-radius: 3px;
-  padding: 3px;
-  color: #3a1b44;
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: rgb(36, 3, 102);
   font-weight: bold;
   text-decoration: none;
+}
+
+a:hover, 
+a:active {
+  background-color: rgb(250, 201, 39);
 }
 
 footer {
   margin: 30px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 #pdf {
   background-color: #f9c927;
+  border-radius: 8px;
   color: #775b07;
   padding: 10px;
   font-size: 15px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+#pdf:hover {
+  background-color: #ffe89c;
+}
+
+#pdf:active {
+  background-color: #daac17;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-left: 5px;
 }
 
 footer p {
