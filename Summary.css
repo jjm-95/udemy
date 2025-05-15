@@ -1,0 +1,81 @@
+header {
+  text-align: center;
+  padding: 32px;
+}
+
+body {
+  background-color: rgb(243, 233, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: rgb(88, 41, 196);
+  font-family: "Roboto", sans-serif;
+  font-size: 52px;
+}
+
+header img {
+  width: 300px;
+  height: auto;
+}
+
+main {
+  margin: 32px auto;
+  background-color: rgb(119, 74, 216);
+  color: rgb(251, 238, 254);
+  text-align: left;
+  width: 700px;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+main p {
+  color: rgb(251, 238, 254);
+  font-size: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*color: #f9e7ba;*/
+}
+
+li {
+  /* list-style-type: none; */
+  /* border-left: 2px solid #f9e7ba; */
+  margin: 14px 0;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
+}
+
+.indent {
+  color: #f9e7ba;
+  border-left: 5px solid #f9e7ba;
+}
+
+a {
+  background-color: #fef0a8;
+  border-radius: 3px;
+  padding: 3px;
+  color: #3a1b44;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  margin: 30px;
+  text-align: center;
+}
+
+#pdf {
+  background-color: #f9c927;
+  color: #775b07;
+  padding: 10px;
+  font-size: 15px;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 15px;
+}
