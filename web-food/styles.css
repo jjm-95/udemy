@@ -1,0 +1,84 @@
+body {
+  color: orange;
+  margin: 0;
+}
+
+header {
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: black;
+}
+
+#page-logo a {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: orange;
+}
+
+header li {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(173, 113, 0);
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(44, 28, 28);
+}
+
+main ul {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+main ul img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+main li {
+  margin: 20px;
+  background-color: rgb(255, 172, 124);
+  padding-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+main button {
+  font-size: 18px;
+  background-color: orange;
+  color: white;
+  border-style: none;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+main li p {
+  font-size: 25px;
+  font-weight: bold;
+}

@@ -46,13 +46,13 @@ header a {
   border-radius: 6px;
 }
 
-header a:hover {
+header nav a:hover {
   color: rgb(77, 77, 77);
   background-color: rgb(255, 251, 0);
 }
 
 footer {
-  background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
   padding: 36px 0;
   /* background-color: black; */
   /* margin: auto; */
