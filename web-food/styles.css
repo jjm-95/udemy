@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: orange;
+  /* color: orange; */
   margin: 0;
   background-color: rgb(44, 41, 38);
 }
@@ -14,19 +14,76 @@ ul {
 }
 
 #main-header {
-  height: 80px;
+  /* height: 80px; */
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(29, 26, 24);
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 #logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: rgb(238, 164, 80);
   text-transform: uppercase;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-btn span {
+  /* display: block; */
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
 }
 
 #main-header ul {
@@ -37,33 +94,33 @@ ul {
 }
 
 #main-header li {
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 #main-header nav a {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(185, 131, 31);
 }
 
 #main-header nav a:hover {
-  color:rgb(228, 163, 44);
+  color: rgb(228, 163, 44);
 }
 
 main h1 {
   text-align: center;
   color: rgb(238, 164, 80);
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 #latest-products {
   width: 80%;
-  margin: 50px auto;
+  margin: 2rem auto;
 }
 
 #latest-products ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -76,43 +133,54 @@ main h1 {
 
 .food-items img {
   width: 100%;
-  height: 240px;
+  height: 15rem;
   object-fit: cover;
 }
 
 .food-item-content {
-  padding: 16px;
+  /* padding: 16px; */
+  /* padding: 10%; */
+  padding: 1rem;
   text-align: center;
+}
+
+.food-items h2 {
+ margin:  0 0 1rem 0;
 }
 
 .btn {
   background-color: rgb(228, 157, 44);
   color: white;
   border-radius: 4px;
-  padding: 8px 24px;
-  /* font-size: 18px; */
+  padding: 0.5rem 1.5rem;
 }
 
 .btn:hover {
   background-color: rgb(221, 134, 34);
 }
 
-/* main li {
-  margin: 20px;
-  background-color: rgb(255, 172, 124);
-  padding-bottom: 10px;
-  color: rgb(0, 0, 0);
-}*/
+/* 챌린지
+1. h1의 요소를 모바일 화면에선 1.5rem으로
+2. nav 모바일 화면에선 숨겨라
+3. media 768px값을 rem으로 변경
+*/
 
-/* .btn {
-  font-size: 18px;
-  background-color: orange;
-  color: white;
-  padding: 10px 20px;
-} */
+@media (max-width: 48rem) {
+  main h1 {
+    font-size: 1.5rem;
+  }
 
+  #main-header nav {
+    display: none;
+  }
 
-/* main li h2 {
-  font-size: 25px;
-  font-weight: bold;
-}  */
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 48rem) {
+  #main-header .menu-btn {
+    display: none;
+  }
+}
