@@ -12,50 +12,153 @@
     <title>HTML Forms</title>
   </head>
   <body>
-    <form action="/" method="GET">
-      <label for="username">Your Name</label>
-      <input type="text" name="user-name" id="user-name" />
+    <header>
+      <h1>Demo Form</h1>
+    </header>
 
-      <label for="user-email">Your Email address</label>
-      <input type="email" name="user-email" id="user-email" />
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>Your personal details</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="user-name" required placeholder="Max"/>
+            </li>
+            <li>
+              <label for="user-email">Your Email address</label>
+              <input type="email" name="user-email" id="user-email" required placeholder="text@email.com"/>
+            </li>
+            <li>
+              <label for="user-password">Your Password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="user-password"
+                required
+                minlength="7"
+              />
+            </li>
+          </ul>
+        </section>
 
-      <label for="user-age">Your Age</label>
-      <input type="number" min="1" step="2" name="user-age" id="user-age" />
+        <section>
+          <h2>More details</h2>
+          <ul>
+            <li>
+              <label for="user-age">Your Age</label>
+              <input
+                type="number"
+                min="18"
+                max="100"
+                step="1"
+                name="user-age"
+                id="user-age"
+                required
+              />
+            </li>
+            <li>
+              <label for="user-birthdate">Your Birthdate</label>
+              <input
+                type="date"
+                name="user-birthdate"
+                id="user-birthdate"
+                min="1921-01-01"
+                max="2003-01-01"
+                required
+              />
+            </li>
+            <li>
+              <label for="favorite-color">What's your favorite color?</label>
+              <select id="favorite-color" name="color">
+                <!-- option은 value 값을 추가 안해도 text값이 기본값으로 저장됨-->
+                <option value="red">My favorite color is red</option>
+                <option>blue</option>
+                <option>yellow</option>
+              </select>
+            </li>
+          </ul>
+        </section>
 
-      <label for="user-password">Your Password</label>
-      <input type="password" name="user-password" id="user-password" />
+        <section>
+          <label for="user-message">Your message</label>
+          <textarea id="user-message" name="user-message" rows="8"></textarea>
+        </section>
 
-      <label for="user-birthdate">Your Birthdate</label>
-      <input type="date" name="user-birthdate" id="user-birthdate" />
+        <section>
+          <h2>How should we verify your account?</h2>
 
-      <hr />
-      <h2>How should we verify your account?</h2>
-      <div class="form-control-inline">
-        <input
-        type="radio"
-        id="verify-text-message"
-        name="verify"
-        value="text-message"
-        />
-        <label for="verify-text-message">Via text message (SMS)</label>
-      </div>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="verify-text-message"
+                name="verify"
+                value="text-message"
+                required
+              />
+              <label for="verify-text-message">Via text message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="verify-phone-call"
+                name="verify"
+                value="phone"
+                required
+              />
+              <label for="verify-phone-call">Via a phone call</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="verify-email"
+                name="verify"
+                value="email"
+                required
+              />
+              <label for="verify-email">Via an email</label>
+            </li>
+          </ul>
+        </section>
 
-      <div class="form-control-inline">
-        <input
-        type="radio"
-        id="verify-phone-call"
-        name="verify"
-        value="phone"
-        />
-        <label for="verify-phone-call">Via a phone call</label>
-      </div>
+        <section>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-email">Contact me via email</label>
+            </li>
 
-      <div class="form-control-inline">
-        <input type="radio" id="verify-email" name="verify" value="email" />
-        <label for="verify-email">Via an email</label>
-      </div>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-phone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms?</label>
+          </div>
+        </section>
 
-      <button>Submit</button>
-    </form>
+        <section>
+          <!-- <button type="reset">Clear</button> -->
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>

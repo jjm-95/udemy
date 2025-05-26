@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <title>Forms Challenge</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form method="get" action="/">
+        <h2>How can we help you?</h2>
+        <section id="user-details">
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" id="user-name" name="user-name" required />
+            </li>
+            <li>
+              <label for="user-email">Your E-mail Address</label>
+              <input type="email" id="user-email" name="user-email" required />
+            </li>
+            <li>
+              <label for="user-phone">Your Phone Number</label>
+              <input type="tel" id="user-phone" name="user-phone" minlength="10" maxlength="11" required />
+            </li>
+          </ul>
+        </section>
+
+        <section id="user-question">
+          <label for="user-message">Your Message</label>
+          <textarea id="user-message" name="user-message" rows="8"></textarea>
+        </section>
+
+        <section id="dropdown">
+          <label>How did you find us?</label>
+          <select>
+            <option>Web Search</option>
+            <option>Advertise</option>
+            <option>Acquaintance Recommend</option>
+          </select>
+        </section>
+
+        <section id="reply">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="contact-call"
+                name="contact"
+                value="call"
+                required
+              />
+              <label for="contact-call">Call me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="contact-email"
+                name="contact"
+                value="email"
+                required
+              />
+              <label for="contact-email">Send me an email</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="dont-contact"
+                name="contact"
+                value="no"
+                required
+              />
+              <label for="dont-contact">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="chkbox">
+          <input type="checkbox" id="terms" name="terms" required/>
+          <label for="terms"> Accept Terms</label>
+        </section>
+
+        <section id="btn">
+          <button type="reset" class="clr">Clear</button>
+          <button class="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

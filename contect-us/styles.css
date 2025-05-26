@@ -1,0 +1,107 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(218, 248, 248);
+  font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.3rem 0;
+    width: 100%;
+
+}
+
+main {
+    width: 30rem;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(134, 134, 134, 0.2);
+    background-color: white;
+}
+
+form {
+    padding: 1rem;
+    /* width: 100%; */
+}
+
+#user-details input,
+#user-question textarea
+{
+    display: block;
+    width: 100%;
+    height: 1.7rem;
+    margin-top: 0.3rem;
+    padding: 0;
+}
+
+#user-details input:focus,
+#user-question textarea:focus{
+    background-color: aqua;
+}
+
+#user-question textarea {
+    height: 100%;
+    resize: vertical;
+}
+
+#dropdown {
+    margin-top: 0.8rem;
+}
+
+#dropdown select{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+#reply li {
+    padding: 0;
+}
+
+#chkbox {
+    margin: 1rem 0;
+}
+
+#btn {
+    text-align: end;
+}
+
+#btn button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.3rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#btn .clr {
+    border-color: rgb(153, 175, 247);
+    background-color: rgb(218, 248, 248);
+}
+
+#btn .clr:hover {
+    background-color: rgb(171, 194, 194);
+}
+
+
+#btn .submit {
+    background-color: rgb(19, 47, 100);
+    color: white;
+}
+
+#btn .submit:hover {
+    background-color: rgb(10, 26, 56);
+}
