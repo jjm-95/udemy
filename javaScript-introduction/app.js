@@ -50,4 +50,6 @@ let person = {
   }, // Method (메서드)
 };
 
-person.greet();
+person.greet(); // 메서드 호출
+
+
