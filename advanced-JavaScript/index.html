@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced JavaScript</title>
-    <script src="/app.js" defer></script>
+    <!-- <script src="/app.js" defer></script> -->
+    <script src="/demo.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <h1 id="h1Element">Hi there!</h1>
+    <!-- <h1 id="h1Element">Hi there!</h1>
     <p>I'm New!</p>
     <p>
       This is a
@@ -15,7 +17,32 @@
     </p>
 
     <p id="click">Click me!</p>
-    <input id="inputText" type="text">
+    <input id="inputText" type="text" /> -->
+
+    <!-- <section>
+      <form>
+        <label for="product-name">Product Name</label>
+        <div class="remain">
+          <input type="text" id="product-name" />
+          <p id="text-remain">60</p>
+          <p>/60</p>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section> -->
+
+    <form>
+      <div class="control">
+        <label for="product-name">Product Name</label>
+        <input
+          type="text"
+          id="product-name"
+          name="product-name"
+          maxlength="60"
+        />
+        <span id="charcount"> <span id="remaining-chars">60</span>/60 </span>
+      </div>
+      <button>Submit</button>
+    </form>
   </body>
-  </html>
-  
+</html>
