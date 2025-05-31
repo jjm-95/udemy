@@ -47,7 +47,7 @@ function updateRemainingCharacters(event){
     }else if (remainingCharacters <= 10){
         inputStyle.backgroundColor = "red";
     }else if (remainingCharacters <= 30){
-        inputStyle.backgroundColor = "orange";
+        productNameInputElement.classList.add("warning");
     }else if (remainingCharacters > 30){
         inputStyle.backgroundColor = "rgb(252, 249, 233)";
     }
