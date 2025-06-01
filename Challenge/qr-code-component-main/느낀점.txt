@@ -1,0 +1,16 @@
+1. 정 가운데 정렬을 할때는   
+display: flex;
+justify-content: center;
+align-items: center;
+
+2. 높이, 넓이를 정할때 % 쓸경우 부모요소의 높이, 넓이 정해주어야 한다.
+body {
+    height: 100px;
+}
+
+body main {
+    height: 50%;
+}
+
+3. css에서 변수를 정할땐
+--변수명 : 내용 
