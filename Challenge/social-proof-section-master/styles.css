@@ -1,0 +1,133 @@
+body {
+  margin: 0 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  height: 50rem;
+
+  padding: 3rem;
+}
+
+main {
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--White));
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+#headline {
+  /* border: 1px solid black; */
+  display: block;
+  width: 23rem;
+  height: 13rem;
+}
+
+#headline h1 {
+  font-weight: bolder;
+  width: 15rem;
+  font-size: 2.3rem;
+  color: var(--VeryDarkMagenta);
+}
+
+#headline p {
+  color: var(--SoftPink);
+  line-height: 1.3rem;
+}
+
+#rated {
+  font-weight: 500;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+}
+
+#rated ul {
+  width: 30rem;
+}
+
+#rated li {
+  width: 80%;
+  list-style: none;
+  background-color: var(--LightGrayishMagenta);
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 0 1.5rem;
+}
+
+#rated .images {
+  display: inline-block;
+  padding-right: 2rem;
+}
+#rated p {
+  display: inline-block;
+}
+
+#rated li:nth-of-type(2) {
+  margin-left: 1rem;
+}
+
+#rated li:nth-of-type(3) {
+  margin-left: 2rem;
+}
+
+.bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.bottom ul {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom li {
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  list-style: none;
+  width: 25%;
+  height: 13rem;
+  background-color: var(--VeryDarkMagenta);
+  color: var(--LightGrayishMagenta);
+  line-height: 1.5rem;
+}
+
+.bottom #profile {
+  display: flex;
+  line-height: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#profile p:nth-of-type(2){
+    color: var(--DarkGrayishMagenta);
+}
+
+#profile img {
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.bottom li:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+.bottom li:nth-of-type(3) {
+  margin-top: 2rem;
+}
