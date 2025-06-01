@@ -3,7 +3,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-2. 높이, 넓이를 정할때 % 쓸경우 부모요소의 높이, 넓이 정해주어야 한다.
+2. 높이, 넓이를 정할때 % 쓸경우 부모요소의 높이, 넓이 정해주어야 정렬 시 문제가 발생되지 않는다.
 body {
     height: 100px;
 }
