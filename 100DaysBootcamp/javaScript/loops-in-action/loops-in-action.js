@@ -64,7 +64,9 @@ const dummyUserData = {
 
 const displayDataButtonElement = document.querySelector("#user-data button");
 const dataOutputElement = document.querySelector("#output-user-data");
+
 function displayData() {
+  dataOutputElement.innerText = "";
   for (const i in dummyUserData) {
     const containContents = document.createElement("li");
     containContents.innerHTML = i.toUpperCase() + ": " + dummyUserData[i];

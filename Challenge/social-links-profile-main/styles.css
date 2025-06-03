@@ -73,6 +73,7 @@ main section {
 }
 
 #anchor a:hover {
+    cursor: pointer;
     background-color: var(--Green);
     color: var(--Grey-800);
 }
