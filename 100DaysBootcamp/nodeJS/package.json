@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@types/node": "^22.15.30"
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^5.1.0",
+    "undici-types": "^6.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "전재명",
+  "license": "MIT",
+  "description": ""
+}
