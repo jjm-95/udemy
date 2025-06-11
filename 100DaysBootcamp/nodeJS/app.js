@@ -4,6 +4,7 @@
 
 // node.js의 내장 모듈 중 하나인 http모듈을 불러온다. >> require()
 const http = require("http");
+// const express = require('express');
 
 
 // "/currentTime"이란 URL을 호출 시 아래 내용을 수행함 .url

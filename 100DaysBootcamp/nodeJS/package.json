@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "@types/node": "^22.15.30"
+    "@types/node": "^22.15.30",
+    "nodemon": "^3.1.10"
   },
   "name": "nodejs",
   "version": "1.0.0",
@@ -10,7 +11,7 @@
     "undici-types": "^6.21.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"nodemon express.js"
   },
   "author": "전재명",
   "license": "MIT",
