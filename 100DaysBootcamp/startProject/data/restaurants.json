@@ -1,0 +1,23 @@
+[
+  {
+    "name": "testName",
+    "address": "testAddress, testCity",
+    "cuisine": "korean food",
+    "website": "localhost:3000",
+    "description": "just delicious"
+  },
+  {
+    "name": "TestName 2",
+    "address": "TestAddress2, TestCity2",
+    "cuisine": "indian food",
+    "website": "https://www.localIndiaFood.com",
+    "description": "hello world"
+  },
+  {
+    "name": "testName3",
+    "address": "TestAddress3, TestCity3",
+    "cuisine": "American Food",
+    "website": "https://makeDynamicSite.com",
+    "description": "recommend this"
+  }
+]
