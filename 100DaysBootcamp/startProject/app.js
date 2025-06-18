@@ -1,3 +1,4 @@
+const uuid = require("uuid");
 const express = require("express");
 
 const fs = require("fs");
@@ -33,6 +34,22 @@ app.get("/restaurants", function (req, res) {
   });
 });
 
+app.get("/restaurants/:id", function (req, res) {
+  // :id - 동적인 URL경로를 만들기 위한 식별자 ex) :restaurantID 처럼 다른 파라미터도 가능
+  const restaurantId = req.params.id; // 동적 경로를 변수로 할당
+
+  const filePath = path.join(__dirname, "data", "restaurants.json");
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
+
+  for (const restaurant of storedRestaurants) {
+    if (restaurant.id === restaurantId) {
+      return res.render("restaurant-detail", {restaurant: restaurant});
+    }
+  }
+  res.status(404).render("404");
+});
+
 app.get("/recommend", function (req, res) {
   // const htmlFilePath = path.join(__dirname, "views", "recommend.html");
   // res.sendFile(htmlFilePath); // sendFile - html 파일을 건낼 수 있는 함수
@@ -41,6 +58,7 @@ app.get("/recommend", function (req, res) {
 
 app.post("/recommend", function (req, res) {
   const restaurant = req.body;
+  restaurant.id = uuid.v4();
   const filePath = path.join(__dirname, "data", "restaurants.json");
   const fileData = fs.readFileSync(filePath);
   const storedRestaurants = JSON.parse(fileData);
@@ -62,6 +80,14 @@ app.get("/about", function (req, res) {
   // const htmlFilePath = path.join(__dirname, "views", "about.html");
   // res.sendFile(htmlFilePath); // sendFile - html 파일을 건낼 수 있는 함수
   res.render("about");
+});
+
+app.use(function(req, res){
+  res.status(404).render("404");
+});
+
+app.use(function(error, req, res, next){
+  res.status(500).render("500");
 });
 
 app.listen(3000);
