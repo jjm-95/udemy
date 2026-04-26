@@ -24,3 +24,11 @@ console.log(sumUp(211, 3, 4, 5, 6, 7, 8));
 console.log(sumUp(...arrayNumbers)); // ... > 배열의 경우 ...연산자를 붙이면 독립된 값으로 전달한다.
 
 console.log(sumUp);
+
+
+const user = {name: "jm", age: 30, job:"developer"};
+const {age, ...rest} = user; // user 객체의 age를 제외한 나머지 object를 보여줌
+
+console.log(user.name);
+console.log(rest); 
+
