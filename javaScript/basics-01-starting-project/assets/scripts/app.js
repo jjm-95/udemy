@@ -2,14 +2,16 @@ const defaultResult = 0;
 
 let currentResult = defaultResult;
 
-currentResult = (currentResult + 10) * 3 / 2 - 1;
-
-let calculationDescription = `(${defaultResult} + 10) * 3 + 1`;
-
-outputResult(currentResult, calculationDescription);
-
-function greetUser(name){
-    alert('HI'+ user);
+function getUserInput(){
+    return parseInt(userInput.value);
 }
 
-greetUser("Max");
+function add(){
+    const enterNumber = getUserInput();
+    const calcDescription = `${currentResult} + ${enterNumber}`;
+    currentResult = currentResult + enterNumber;
+    outputResult(currentResult, calcDescription);
+     
+}
+
+addBtn.addEventListener('click', add);
