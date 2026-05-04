@@ -8,3 +8,8 @@ let calculationDescription = `(${defaultResult} + 10) * 3 + 1`;
 
 outputResult(currentResult, calculationDescription);
 
+function greetUser(name){
+    alert('HI'+ user);
+}
+
+greetUser("Max");
