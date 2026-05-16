@@ -23,42 +23,71 @@ function writeToLog(연산자, initialResult, enterNumber, currentResult) {
   logEntries.push(logEntry);
 }
 
-function add() {
+function calculationResult(calType) {
   const enterNumber = getUserInput();
   const initialResult = currentResult;
-  currentResult = currentResult + enterNumber;
-  createAndWriteOutput('+', initialResult, enterNumber);
-  writeToLog('ADD', initialResult, enterNumber, currentResult);
+  let mathOperator;
+  if (calType === 'ADD') {
+    currentResult = currentResult + enterNumber;
+    mathOperator = '+';
+  } else if (calType === 'SUBTRACT') {
+    currentResult = currentResult - enterNumber;
+    mathOperator = '-';
+  } else if (calType === 'MULTIPLY') {
+    currentResult = currentResult * enterNumber;
+    mathOperator = '*';
+  } else if (calType === 'DIVIDE') {
+    currentResult = currentResult / enterNumber;
+    mathOperator = '/';
+  } else {
+    console.log('NOT TYPE IN CALCULATOR');
+  }
+  createAndWriteOutput(mathOperator, initialResult, enterNumber);
+  writeToLog('calType', initialResult, enterNumber, currentResult);
   console.log(logEntries);
+}
+
+function add() {
+  calculationResult('ADD');
+  //   const enterNumber = getUserInput();
+  //   const initialResult = currentResult;
+  //   currentResult = currentResult + enterNumber;
+  //   createAndWriteOutput('+', initialResult, enterNumber);
+  //   writeToLog('ADD', initialResult, enterNumber, currentResult);
+  //   console.log(logEntries);
 }
 
 function subtract() {
-  const enterNumber = getUserInput();
-  const initialResult = currentResult;
-  currentResult = currentResult - enterNumber;
-  createAndWriteOutput('-', initialResult, enterNumber);
-  writeToLog('SUBRACT', initialResult, enterNumber, currentResult);
-  console.log(logEntries);
+  calculationResult('SUBTRACT');
+  //   const enterNumber = getUserInput();
+  //   const initialResult = currentResult;
+  //   currentResult = currentResult - enterNumber;
+  //   createAndWriteOutput('-', initialResult, enterNumber);
+  //   writeToLog('SUBRACT', initialResult, enterNumber, currentResult);
+  //   console.log(logEntries);
 }
 
 function multiply() {
-  const enterNumber = getUserInput();
-  const initialResult = currentResult;
-  currentResult = currentResult * enterNumber;
-  createAndWriteOutput('*', initialResult, enterNumber);
-  writeToLog('MULTIPLY', initialResult, enterNumber, currentResult);
-  console.log(logEntries);
+  calculationResult('MULTIPLY');
+  // const enterNumber = getUserInput();
+  // const initialResult = currentResult;
+  // currentResult = currentResult * enterNumber;
+  // createAndWriteOutput('*', initialResult, enterNumber);
+  // writeToLog('MULTIPLY', initialResult, enterNumber, currentResult);
+  // console.log(logEntries);
 }
 
 function divide() {
-  const enterNumber = getUserInput();
-  const initialResult = currentResult;
-  currentResult = currentResult / enterNumber;
-  createAndWriteOutput('/', initialResult, enterNumber);
-  writeToLog('DIVIDE', initialResult, enterNumber, currentResult);
-  console.log(logEntries);
+  calculationResult('DIVIDE');
+  // const enterNumber = getUserInput();
+  // const initialResult = currentResult;
+  // currentResult = currentResult / enterNumber;
+  // createAndWriteOutput('/', initialResult, enterNumber);
+  // writeToLog('DIVIDE', initialResult, enterNumber, currentResult);
+  // console.log(logEntries);
 }
 
+/**저장된 값을 초기화 시키는 함수 */
 function initalize() {
   currentResult = 0;
   outputResult(currentResult, 'Initalized!');
