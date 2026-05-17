@@ -24,6 +24,16 @@ function writeToLog(연산자, initialResult, enterNumber, currentResult) {
 }
 
 function calculationResult(calType) {
+  // 제시된 타입 외 다른 값이 입력되었을때 반환
+  if (
+    calType !== 'ADD' &&
+    calType !== 'SUBTRACT' &&
+    calType !== 'MULTIPLY' &&
+    calType !== 'DIVIDE'
+  ) {
+    return;
+  }
+
   const enterNumber = getUserInput();
   const initialResult = currentResult;
   let mathOperator;
