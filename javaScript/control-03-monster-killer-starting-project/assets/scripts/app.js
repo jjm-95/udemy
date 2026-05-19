@@ -18,14 +18,6 @@ let currentStrongAttackAmount = 3;
 strongAttackAmount.value = currentStrongAttackAmount;
 strongAttackAmount.innerText = strongAttackAmount.value;
 
-function inspectRound(함수) {
-  if (currentMonsterHealth <= 0 || currentPlayerHealth <= 0) {
-    alert('게임끝!');
-  } else {
-    함수;
-  }
-}
-
 function endRound() {
   const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE);
   currentPlayerHealth = currentPlayerHealth - playerDamage;
@@ -82,6 +74,9 @@ function healPlayerHandler() {
   } else if (currentHealAmount <= 0) {
     // 힐 갯수가 0이 된 경우 힐 방지
     alert('회복 할 수 없슴!');
+  } else if (currentPlayerHealth + HEAL_VALUE >= chosenMaxLife) {
+    // 최대체력 초과하여 힐 방지
+    alert('초과하여 회복 할 수없음');
   } else {
     const healPlayer = increasePlayerHealth(HEAL_VALUE);
     // 힐 진행 시 힐 갯수 업데이트 반영
