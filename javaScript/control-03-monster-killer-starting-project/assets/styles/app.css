@@ -84,3 +84,21 @@ button:active {
   text-align: center;
   margin: 0 0.5rem;
 }
+
+#heal-amount {
+  font-weight: bold;
+  color: white;
+  background: #05dd3b;
+  border: 1px solid #15d615;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+#strong-amount {
+  background: #574545;
+  border: 1px solid #285228;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+}
